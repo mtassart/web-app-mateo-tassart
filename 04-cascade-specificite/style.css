@@ -20,6 +20,10 @@ li {
     color: purple;
 }
 
+#race-poil-long {
+    color: rgb(45, 218, 82);
+}
+
 .recommandee {
     font-weight: bold;
     color: seagreen;

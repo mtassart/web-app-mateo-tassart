@@ -1,0 +1,88 @@
+body {
+    font-family: Arial, sans-serif;
+    color: darkslategray;
+    margin-left: 1000;
+}
+
+h1 {
+    color: steelblue;
+}
+
+h2 {
+    color: teal;
+}
+
+li {
+    margin-bottom: 4px;
+    color: black;
+}
+
+#race-vedette {
+    color: purple;
+}
+
+#race-poil-long {
+    color: rgb(45, 218, 82);
+}
+
+.recommandee {
+    font-weight: bold;
+    color: seagreen;
+}
+
+.deconseillee {
+    font-weight: bold;
+    color: red;
+}
+
+.liste {
+    list-style-type: decimal;
+    /* 1, 2, 3 (par défaut) : ou lower-alpha (a, b, c), upper-roman (I, II, III)... */
+    list-style-position: inside;
+    /* Place les numéros à l'intérieur du bloc */
+    margin: 0.5rem 0;
+    padding: 0.2;
+    color: #d410cb;
+}
+
+.liste li {
+    padding: 0.5rem 0;
+}
+
+em {
+    color: rgb(76, 0, 255);
+}
+
+.styled {
+    border: 0;
+    line-height: 2.5;
+    padding: 0 20px;
+    font-size: 1rem;
+    text-align: center;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+    border-radius: 10px;
+    background-color: rgb(180, 26, 134);
+    background-image: linear-gradient(to top left,
+            rgb(0 0 0 / 0.2),
+            rgb(0 0 0 / 0.2) 30%,
+            transparent);
+    box-shadow:
+        inset 2px 2px 3px rgb(255 255 255 / 0.6),
+        inset -2px -2px 3px rgb(0 0 0 / 0.6);
+}
+
+.styled:hover {
+    background-color: rgb(38, 139, 28);
+}
+
+.styled:active {
+    box-shadow:
+        inset -2px -2px 3px rgb(255 255 255 / 0.6),
+        inset 2px 2px 3px rgb(0 0 0 / 0.6);
+}
+
+img {
+    width: 25%;
+    object-fit: cover;
+}

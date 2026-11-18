@@ -86,3 +86,27 @@ img {
     width: 25%;
     object-fit: cover;
 }
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 16px;
+}
+
+nav a {
+    color: darkslategray;
+    text-decoration: none;
+}
+
+nav a:visited {
+    color: darkslategray;
+}
+
+nav a:hover {
+    color: seagreen;
+    text-decoration: underline;
+}

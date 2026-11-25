@@ -229,3 +229,23 @@ header {
 .colonnes aside {
     flex: 1;
 }
+
+.races {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+}
+
+.colonnes {
+    display: flex;
+    gap: 20px;
+}
+
+.colonnes article {
+    flex: 1;
+}
+
+.colonnes aside {
+    flex: 2;
+}

@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Grand Theft Auto V — Los Santos</title>
+  <link rel="icon" href="favicon.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+  <header class="site-header">
+    <a class="wordmark" href="#accueil" aria-label="GTA V — Accueil"><span>grand</span><strong>THEFT AUTO</strong><i>V</i></a>
+    <input class="menu-check" type="checkbox" id="menu-check" aria-label="Ouvrir ou fermer le menu">
+    <label class="menu-toggle" for="menu-check" aria-label="Menu"><span></span><span></span></label>
+    <nav class="main-nav" aria-label="Navigation principale">
+      <a href="#histoire">Histoire</a><a href="#personnages">Personnages</a><a href="#online">GTA Online</a><a href="#carte">La carte</a>
+    </nav>
+    <a class="buy-button header-buy" href="#acheter">Acheter <svg viewBox="0 0 24 24"><path d="M5 12h14M14 6l6 6-6 6"/></svg></a>
+  </header>
+
+  <section class="hero" id="accueil">
+    <div class="hero-backdrop"></div>
+    <div class="hero-content">
+      <p class="eyebrow"><span></span> Bienvenue à Los Santos</p>
+      <h1>VIVEZ<br>SANS <em>LIMITES</em></h1>
+      <p class="hero-copy">Trois destins. Une ville sans pitié. Entrez dans le monde ouvert le plus iconique de tous les temps.</p>
+      <div class="hero-actions">
+        <a class="primary-button" href="#histoire">Découvrir le jeu <svg viewBox="0 0 24 24"><path d="M5 12h14M14 6l6 6-6 6"/></svg></a>
+        <a class="trailer-button" href="#histoire"><span class="play">▶</span> Voir la bande-annonce</a>
+      </div>
+    </div>
+    <div class="hero-meta"><span>01</span><div class="progress"><i></i></div><span>03</span></div>
+    <a class="scroll-cue" href="#histoire">Explorer <svg viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></svg></a>
+  </section>
+
+  <section class="story section-wrap" id="histoire">
+    <div class="section-kicker">L’histoire</div>
+    <div class="story-grid">
+      <div><h2>UNE VILLE.<br><span>TROIS DESTINS.</span></h2></div>
+      <div class="story-copy">
+        <p>Quand un jeune arnaqueur, un braqueur de banque à la retraite et un psychopathe terrifiant se retrouvent mêlés aux éléments les plus dangereux de la pègre, ils doivent réussir une série de coups audacieux pour survivre.</p>
+        <a href="#personnages">Rencontrer les protagonistes <svg viewBox="0 0 24 24"><path d="M5 12h14M14 6l6 6-6 6"/></svg></a>
+      </div>
+    </div>
+    <div class="panorama" aria-label="Vue de Los Santos au coucher du soleil">
+      <div class="panorama-label"><span>État de</span><strong>San Andreas</strong></div><div class="coordinates">34°03′N&nbsp;&nbsp; 118°15′W</div>
+    </div>
+  </section>
+
+  <section class="map-section" id="carte">
+    <div class="section-wrap">
+      <div class="map-heading">
+        <div><div class="section-kicker light">Explorez San Andreas</div><h2>TOUT UN ÉTAT<br><span>À CONQUÉRIR.</span></h2></div>
+        <p>De la frénésie de Los Santos aux reliefs sauvages du nord, découvrez les lieux emblématiques de San Andreas.</p>
+      </div>
+      <div class="map-filters" aria-label="Catégories de lieux">
+        <span class="active">Tous les lieux</span><span>Ville</span><span>Nature</span><span>Zones sensibles</span>
+      </div>
+      <div class="map-static">
+        <div class="map-static-visual">
+          <img src="assets/san-andreas-map.png" alt="Carte de San Andreas">
+          <span class="map-tag tag1">1 · Los Santos</span><span class="map-tag tag2">2 · Vinewood</span>
+          <span class="map-tag tag3">3 · Sandy Shores</span><span class="map-tag tag4">4 · Mont Chiliad</span>
+          <span class="map-tag tag5">5 · Paleto Bay</span><span class="map-tag tag6">6 · Fort Zancudo</span>
+        </div>
+        <aside class="map-static-list">
+          <h3>Points d’intérêt</h3>
+          <ul>
+            <li><strong>Los Santos · Centre-ville</strong>La métropole qui ne dort jamais : luxe, ambition et chaos à chaque carrefour.</li>
+            <li><strong>Vinewood · Collines</strong>Villas grandioses, studios historiques et vues imprenables sur toute la ville.</li>
+            <li><strong>Sandy Shores · Blaine County</strong>Un avant-poste poussiéreux au bord de l’Alamo Sea, loin des règles de la ville.</li>
+            <li><strong>Mont Chiliad · Réserve naturelle</strong>Le plus haut sommet de San Andreas, terrain idéal pour les explorateurs.</li>
+            <li><strong>Paleto Bay · Côte nord</strong>Une petite ville côtière isolée entre l’océan et les forêts du nord.</li>
+            <li><strong>Fort Zancudo · Zone militaire</strong>Base militaire hautement sécurisée. Une visite réservée aux plus téméraires.</li>
+          </ul>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <section class="characters" id="personnages">
+    <div class="section-wrap">
+      <div class="character-heading">
+        <div><div class="section-kicker light">Les protagonistes</div><h2>CHANGEZ DE<br><span>PERSPECTIVE</span></h2></div>
+        <p>Découvrez Los Santos sous trois angles radicalement différents en sélectionnant un personnage.</p>
+      </div>
+      <div class="character-stage static-stage">
+        <input class="character-choice" type="radio" name="character" id="char-michael" checked>
+        <input class="character-choice" type="radio" name="character" id="char-franklin">
+        <input class="character-choice" type="radio" name="character" id="char-trevor">
+        <div class="character-index"></div>
+        <div class="character-card card-michael"><p class="character-role">Le professionnel</p><h3>Michael</h3><p class="quote">“Tout semblait parfait. Mais le passé finit toujours par vous rattraper.”</p><div class="skill"><span>Spécialité</span><strong>Stratège</strong></div></div>
+        <div class="character-card card-franklin"><p class="character-role">L’ambitieux</p><h3>Franklin</h3><p class="quote">“Il faut parfois changer de route pour atteindre le sommet.”</p><div class="skill"><span>Spécialité</span><strong>Pilote</strong></div></div>
+        <div class="character-card card-trevor"><p class="character-role">L’imprévisible</p><h3>Trevor</h3><p class="quote">“À Los Santos, le chaos n’est pas un accident. C’est un mode de vie.”</p><div class="skill"><span>Spécialité</span><strong>Instinct</strong></div></div>
+        <div class="character-art"><div class="portrait"><span></span></div></div>
+        <div class="character-tabs" role="group" aria-label="Choisir un personnage">
+          <label for="char-michael"><span>01</span>Michael</label><label for="char-franklin"><span>02</span>Franklin</label><label for="char-trevor"><span>03</span>Trevor</label>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="online section-wrap" id="online">
+    <div class="online-intro"><div><div class="section-kicker">GTA Online</div><h2>VOTRE VILLE.<br><span>VOS RÈGLES.</span></h2></div><p>Entrez dans un univers en ligne dynamique et en constante évolution, où vous pouvez passer du petit délinquant au roi d’un empire.</p></div>
+    <div class="activity-grid">
+      <article class="activity-card gold"><span class="card-number">01</span><div class="card-icon"><i></i><i></i></div><div><h3>Braquages</h3><p>Montez votre équipe, préparez chaque détail et repartez avec le gros lot.</p><a href="#acheter" aria-label="Découvrir les braquages"><svg viewBox="0 0 24 24"><path d="M5 12h14M14 6l6 6-6 6"/></svg></a></div></article>
+      <article class="activity-card blue"><span class="card-number">02</span><div class="card-icon"><i></i><i></i></div><div><h3>Courses</h3><p>Dominez les rues, les airs et les circuits les plus sauvages de San Andreas.</p><a href="#acheter" aria-label="Découvrir les courses"><svg viewBox="0 0 24 24"><path d="M5 12h14M14 6l6 6-6 6"/></svg></a></div></article>
+      <article class="activity-card red"><span class="card-number">03</span><div class="card-icon"><i></i><i></i></div><div><h3>Business</h3><p>Bâtissez votre empire criminel et prenez le contrôle de la ville.</p><a href="#acheter" aria-label="Découvrir les business"><svg viewBox="0 0 24 24"><path d="M5 12h14M14 6l6 6-6 6"/></svg></a></div></article>
+    </div>
+  </section>
+
+  <section class="cta" id="univers"><div class="cta-background"></div><div class="cta-content" id="acheter">
+    <p class="eyebrow"><span></span> Los Santos vous attend</p><h2>PRÊT À PRENDRE<br>LE <em>CONTRÔLE ?</em></h2><p>Disponible sur PlayStation 5, Xbox Series X|S et PC.</p><a class="primary-button" href="#accueil">Choisir une édition <svg viewBox="0 0 24 24"><path d="M5 12h14M14 6l6 6-6 6"/></svg></a>
+  </div></section>
+  <footer><a class="wordmark footer-mark" href="#accueil"><span>grand</span><strong>THEFT AUTO</strong><i>V</i></a><p>Site conceptuel non officiel inspiré de Grand Theft Auto V.</p><div><a href="#accueil">Confidentialité</a><a href="#accueil">Mentions légales</a></div></footer>
+</main>
+</body>
+</html>

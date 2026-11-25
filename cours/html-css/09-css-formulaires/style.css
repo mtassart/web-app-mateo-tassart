@@ -166,10 +166,50 @@ textarea:focus {
     outline-offset: 1px;
 }
 
-input:valid {
+
+/* Champs valides */
+input:valid,
+select:valid,
+textarea:valid {
     border-color: seagreen;
 }
 
-input:invalid {
+/* Champs invalides après interaction */
+input:user-invalid,
+select:user-invalid,
+textarea:user-invalid {
     border-color: crimson;
+    background-color: #fff0f0;
+}
+
+/* Champs obligatoires */
+input:required,
+select:required,
+textarea:required {
+    border-left: 4px solid rgb(224, 8, 8);
+}
+
+/* Champs facultatifs */
+input:optional,
+select:optional,
+textarea:optional {
+    border-left: 4px solid gray;
+}
+
+/* Astérisque pour les champs obligatoires */
+label:has(+ input:required)::after,
+label:has(+ select:required)::after,
+label:has(+ textarea:required)::after {
+    content: " *";
+    color: crimson;
+    font-weight: bold;
+}
+
+/* Mention pour les champs facultatifs */
+label:has(+ input:optional)::after,
+label:has(+ select:optional)::after,
+label:has(+ textarea:optional)::after {
+    content: " (facultatif)";
+    color: gray;
+    font-size: 0.85em;
 }

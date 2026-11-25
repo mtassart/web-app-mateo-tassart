@@ -1,0 +1,215 @@
+body {
+    font-family: Arial, sans-serif;
+    color: darkslategray;
+    margin-left: 1000;
+}
+
+h1 {
+    color: steelblue;
+}
+
+h2 {
+    color: teal;
+}
+
+li {
+    margin-bottom: 4px;
+    color: black;
+}
+
+#race-vedette {
+    color: purple;
+}
+
+#race-poil-long {
+    color: rgb(45, 218, 82);
+}
+
+.recommandee {
+    font-weight: bold;
+    color: seagreen;
+}
+
+.deconseillee {
+    font-weight: bold;
+    color: red;
+}
+
+.liste {
+    list-style-type: decimal;
+    /* 1, 2, 3 (par défaut) : ou lower-alpha (a, b, c), upper-roman (I, II, III)... */
+    list-style-position: inside;
+    /* Place les numéros à l'intérieur du bloc */
+    margin: 0.5rem 0;
+    padding: 0.2;
+    color: #d410cb;
+}
+
+.liste li {
+    padding: 0.5rem 0;
+}
+
+em {
+    color: rgb(76, 0, 255);
+}
+
+.styled {
+    border: 0;
+    line-height: 2.5;
+    padding: 0 20px;
+    font-size: 1rem;
+    text-align: center;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+    border-radius: 10px;
+    background-color: rgb(180, 26, 134);
+    background-image: linear-gradient(to top left,
+            rgb(0 0 0 / 0.2),
+            rgb(0 0 0 / 0.2) 30%,
+            transparent);
+    box-shadow:
+        inset 2px 2px 3px rgb(255 255 255 / 0.6),
+        inset -2px -2px 3px rgb(0 0 0 / 0.6);
+}
+
+.styled:hover {
+    background-color: rgb(38, 139, 28);
+}
+
+.styled:active {
+    box-shadow:
+        inset -2px -2px 3px rgb(255 255 255 / 0.6),
+        inset 2px 2px 3px rgb(0 0 0 / 0.6);
+}
+
+img {
+    width: 25%;
+    object-fit: cover;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 16px;
+}
+
+nav a {
+    color: darkslategray;
+    text-decoration: none;
+}
+
+nav a:visited {
+    color: darkslategray;
+}
+
+nav a:hover {
+    color: seagreen;
+    text-decoration: underline;
+}
+
+figure {
+    border: 2px solid steelblue;
+    padding: 10px;
+    margin: 20px;
+}
+
+img1 {
+    width: 350px;
+}
+
+figcaption {
+    font-style: italic;
+    margin-top: 4px;
+}
+
+.image-chat {
+    border: 2px solid #7da6c4;
+    padding: 5px;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+th,
+td {
+    border: 1px solid darkslategray;
+    padding: 6px;
+    text-align: left;
+    vertical-align: top;
+}
+
+thead {
+    background-color: steelblue;
+    color: white;
+}
+
+tbody tr:nth-child(even) {
+    background-color: whitesmoke;
+}
+
+input,
+select,
+textarea {
+    border: 1px solid darkslategray;
+    padding: 4px;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: 2px solid steelblue;
+    outline-offset: 1px;
+}
+
+
+/* Champs valides */
+input:valid,
+select:valid,
+textarea:valid {
+    border-color: seagreen;
+}
+
+/* Champs invalides après interaction */
+input:user-invalid,
+select:user-invalid,
+textarea:user-invalid {
+    border-color: crimson;
+    background-color: #fff0f0;
+}
+
+/* Champs obligatoires */
+input:required,
+select:required,
+textarea:required {
+    border-left: 4px solid rgb(224, 8, 8);
+}
+
+/* Champs facultatifs */
+input:optional,
+select:optional,
+textarea:optional {
+    border-left: 4px solid gray;
+}
+
+/* Astérisque pour les champs obligatoires */
+label:has(+ input:required)::after,
+label:has(+ select:required)::after,
+label:has(+ textarea:required)::after {
+    content: " *";
+    color: crimson;
+    font-weight: bold;
+}
+
+/* Mention pour les champs facultatifs */
+label:has(+ input:optional)::after,
+label:has(+ select:optional)::after,
+label:has(+ textarea:optional)::after {
+    content: " (facultatif)";
+    color: gray;
+    font-size: 0.85em;
+}
